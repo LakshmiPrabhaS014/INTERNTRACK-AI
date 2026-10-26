@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InternTrack AI — Internship Review Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app" id="app">
+<header class="topbar">
+ <button class="icon-btn mobile-menu" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
+ <div class="brand"><div class="brand-mark">IT</div><div><h1>InternTrack AI</h1><p>AI Internship Review Desk</p></div></div>
+ <div class="top-actions"><span class="mono hide-small">ACADEMIC YEAR · 2026–27</span><select class="role-select" id="roleSelect" aria-label="Preview user role" onchange="changeRole(this.value)"><option value="Administrator">Administrator view</option><option value="Reviewer">Reviewer view</option><option value="Student">Student view</option></select><button class="icon-btn" onclick="toggleTheme()" title="Toggle light/dark theme" aria-label="Toggle theme">◐</button></div>
+</header>
+<div class="layout">
+<aside id="sidebar">
+ <div class="nav-label">WORKSPACE</div>
+ <nav class="nav" id="nav"></nav>
+ <div class="side-note"><strong>FIELD NOTE / 001</strong>Keep the process transparent. Keep the feedback useful. Help every student finish strong.</div>
+</aside>
+<main class="main" id="main"></main>
+</div>
+<div id="overlay"></div><div id="toastRoot" aria-live="polite"></div>
+</div>
+<script src="/js/app.js"></script>
+</body></html>
